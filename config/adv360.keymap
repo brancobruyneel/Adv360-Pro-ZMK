@@ -97,7 +97,7 @@
     };
     dollar0: hash_five {
         compatible = "zmk,behavior-mod-morph";
-        label = "DOLLAR_ZERO"";
+        label = "DOLLAR_ZERO";
         #binding-cells = <0>;
         bindings = <&kp DOLLAR>, <&kp KP_N0>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
