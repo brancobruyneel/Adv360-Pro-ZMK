@@ -31,84 +31,7 @@
         bindings = <&kp>, <&kp>;
     };
 
-    star1: star_one {
-        compatible = "zmk,behavior-mod-morph";
-        label = "STAR_ONE";
-        #binding-cells = <0>;
-        bindings = <&kp STAR>, <&kp N1>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    bracket2: bracket_two {
-        compatible = "zmk,behavior-mod-morph";
-        label = "BRACKET_TWO";
-        #binding-cells = <0>;
-        bindings = <&kp LEFT_BRACKET>, <&kp N2>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    brace3: brace_three {
-        compatible = "zmk,behavior-mod-morph";
-        label = "BRACE_THREE";
-        #binding-cells = <0>;
-        bindings = <&kp LEFT_BRACE>, <&kp N3>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    paren4: parenthesis_four {
-        compatible = "zmk,behavior-mod-morph";
-        label = "PARENTHESIS_FOUR";
-        #binding-cells = <0>;
-        bindings = <&kp LEFT_PARENTHESIS>, <&kp N4>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    hash5: hash_five {
-        compatible = "zmk,behavior-mod-morph";
-        label = "HASH_FIVE";
-        #binding-cells = <0>;
-        bindings = <&kp HASH>, <&kp N5>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    caret6: caret_six {
-        compatible = "zmk,behavior-mod-morph";
-        label = "CARET_SIX";
-        #binding-cells = <0>;
-        bindings = <&kp CARET>, <&kp N6>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    paren7: parenthesis_seven {
-        compatible = "zmk,behavior-mod-morph";
-        label = "PARENTHESIS_SEVEN";
-        #binding-cells = <0>;
-        bindings = <&kp RIGHT_PARENTHESIS>, <&kp N7>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    brace8: bracke_eight {
-        compatible = "zmk,behavior-mod-morph";
-        label = "BRACKE_EIGHT";
-        #binding-cells = <0>;
-        bindings = <&kp RIGHT_BRACE>, <&kp N8>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    bracket9: bracket_nine {
-        compatible = "zmk,behavior-mod-morph";
-        label = "BRACKET_NINE";
-        #binding-cells = <0>;
-        bindings = <&kp RIGHT_BRACKET>, <&kp N9>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    dollar0: hash_five {
-        compatible = "zmk,behavior-mod-morph";
-        label = "DOLLAR_ZERO";
-        #binding-cells = <0>;
-        bindings = <&kp DOLLAR>, <&kp N0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    pat: percent_at {
-        compatible = "zmk,behavior-mod-morph";
-        label = "PERCENT_AT";
-        #binding-cells = <0>;
-        bindings = <&kp PERCENT>, <&kp AT>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-  }; 
+  };
 
     keymap {
         compatible = "zmk,keymap";
@@ -116,7 +39,7 @@
 
         default_layer {
             bindings = <
-&kp EQUAL    &star1     &bracket2         &brace3       &paren4        &hash5                      &tog 1            &mo 3      &caret6    &paren7    &brace8        &bracket9          &dollar0 &kp MINUS
+&kp EQUAL    &N1        &kp N2            &kp N3        &kp N4         &kp N5                      &tog 1             &mo 3     &kp N6     &kp N7     &kp N8         &kp N9             &kp N0  &kp MINUS
 &kp TAB      &kp Q      &kp W             &kp E         &kp R          &kp T                       &none             &none      &kp Y      &kp U      &kp I          &kp O              &kp P   &kp BSLH
 &kp ESC      &kp A      &kp S             &kp D         &kp F          &kp G                       &none         &kp LCTRL   &kp LALT                             &kp LGUI          &kp RCTRL      &none     &kp H   &kp J      &kp K    &kp L  &kp SEMI    &kp SQT
 &kp LSHFT    &kp Z      &kp X             &kp C         &kp V          &kp B                       &none             &none   &kp HOME      &none      &none      &kp PG_UP              &none      &none     &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
