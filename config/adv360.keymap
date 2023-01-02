@@ -35,7 +35,7 @@
         compatible = "zmk,behavior-mod-morph";
         label = "STAR_ONE";
         #binding-cells = <0>;
-        bindings = <&kp STAR>, <&kp KP_N1>;
+        bindings = <&kp STAR>, <&kp N1>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
